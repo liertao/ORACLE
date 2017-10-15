@@ -2,5 +2,4 @@
 ## 1、oracle数据库导入dmp文件
 
 1、以sysdba用户的身份登录到plsql,如下图：
-
 ![image](https://github.com/liertao/ORACLE/blob/master/images/loginplsql.png)
