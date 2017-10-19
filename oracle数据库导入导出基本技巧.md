@@ -11,15 +11,15 @@
 
 3、打开一个sql窗口，执行
 
-·grant dba to userName;
+grant dba to userName;
 
-·grant connect to userName;
+grant connect to userName;
 
-·grant resource to userName;
+grant resource to userName;
 
 4、在dos中执行如下命令：
 
-·imp cmes/cmes@orcl file=d:\20170822cmes.dmp full=y
+imp cmes/cmes@orcl file=d:\20170822cmes.dmp full=y
 
 其中file是数据库文件的路径
 
