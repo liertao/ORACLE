@@ -1,2 +1,2 @@
 # ORACLE
-'oracle sql knowledges'
+`oracle sql knowledges`
