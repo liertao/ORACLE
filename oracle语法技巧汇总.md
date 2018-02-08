@@ -11,4 +11,14 @@
   FROM DUAL
 CONNECT BY ROWNUM <=
            months_between(to_date('2015', 'yyyy'), to_date('2014', 'yyyy')) / 12 + 1`
-
+           
+### 3、获取两个日期之间的年月列表
+`SELECT TO_CHAR(ADD_MONTHS(TO_DATE('2014-10', 'yyyy-MM'), ROWNUM - 1),'yyyy-MM') as monthlist
+  FROM DUAL
+CONNECT BY ROWNUM <=
+           months_between(to_date('2015-06', 'yyyy-MM'), to_date('2014-10', 'yyyy-MM')) + 1`
+### 4、获取两个日期之间的日期列表
+`SELECT TO_CHAR(TO_DATE('2018-02-01', 'yyyy-MM-dd') + ROWNUM - 1, 'yyyy-MM-dd') as daylist
+  FROM DUAL
+CONNECT BY ROWNUM <=
+           trunc(to_date('2018-02-28', 'yyyy-MM-dd') - to_date('2018-02-01', 'yyyy-MM-dd')) + 1`
